@@ -1,0 +1,21 @@
+.tabs-bordered>.tab {
+    border-color: #0c132e00;
+    --tw-border-opacity: 0.2 !important;
+    border-style: solid !important;
+    border-bottom-width: 1px !important;
+}
+
+.tab:checked {
+    border-bottom: 1px solid #5d807f !important;
+    color: #5d807f;
+}
+
+.tab-heading h1::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    left: -10px;
+    top: 0;
+    background: #0c132e;
+}

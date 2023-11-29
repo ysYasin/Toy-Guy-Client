@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --tbh-font-family: 'Nova Square', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+ul li {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+*,
+body {
+    scroll-behavior: smooth;
+}
+
+.pageLi {
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.pageLi::before {
+    content: "";
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    left: -18px;
+    top: 13px;
+    transition: all 0.3s ease;
+    background: #8ba691;
+
+}
+
+.pageLi:hover {
+    color: #8ba691;
+    padding-left: 1.5rem;
+}
+
+.pageLi:hover:before {
+    width: 32px;
+}
+
+/* Carosels */
+#content h1 {
+    font-family: var(--tbh-font-family);
+}
+
+/* carosel quot */
+.quot::before {
+    content: "";
+    width: 2px;
+    height: 120%;
+    position: absolute;
+    background: #8ba691;
+    left: -1rem;
+}
+
+/* CArosel animation creat */
+.round-ani1,
+.round-ani2 {
+    animation: round-animition 3s cubic-bezier(.4, 0, 1, 1) infinite;
+}
+
+.round-ani2 {
+    animation-delay: 0.8s;
+}
+
+@keyframes round-animition {
+    0% {
+        transform: scale(.8);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+/* Banner image */
+.banner-img {
+    width: 70% !important;
+    margin: auto;
+}
+
+.banner-bottom {
+    background: url("./assets/image-home-bottom-baner/bc-2.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Break points */
+@media only screen and (max-width:689px) {
+    .banner-img {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width:690px) and (max-width:900px) {
+    .banner-img {
+        width: 100% !important;
+    }
+}
