@@ -1,3 +1,4 @@
+import Subscribe from "../../../SharePages/Subscribe/Subscribe";
 import Carosel from "../Carosel/Carosel";
 import DealOfTheDaySection from "../DealOfThedaySection/DealOfTheDaySection";
 import HomeBanerBottom from "../Home-Baner-Bottom/HomeBanerBottom";
@@ -12,6 +13,7 @@ const Home = () => {
       <PopulerProduct></PopulerProduct>
       <DealOfTheDaySection></DealOfTheDaySection>
       <HomeBanerBottom></HomeBanerBottom>
+      <Subscribe></Subscribe>
     </div>
   );
 };

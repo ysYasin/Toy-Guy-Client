@@ -111,6 +111,14 @@ body {
     background-size: cover;
 }
 
+/* subscribe banner design */
+.subscribe {
+    background-image: url("./assets/subscribe-img/bg.jpg");
+    /* padding: 4rem 3rem; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Break points */
 @media only screen and (max-width:689px) {
     .banner-img {
