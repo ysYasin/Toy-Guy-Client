@@ -23,7 +23,7 @@ const HomeBanerBottom = () => {
         <div className=""></div>
       </div>
       <div
-        className="grid grid-cols-4 gap-3"
+        className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-3"
         style={{ background: "rgb(241 245 249)" }}
       >
         <div

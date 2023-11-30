@@ -73,6 +73,16 @@ body {
     animation-delay: 0.8s;
 }
 
+/* deal off the day */
+.dealotd::before {
+    content: "";
+    width: 2px;
+    height: 120%;
+    position: absolute;
+    background: #8ba691;
+    left: -1rem;
+}
+
 @keyframes round-animition {
     0% {
         transform: scale(.8);
