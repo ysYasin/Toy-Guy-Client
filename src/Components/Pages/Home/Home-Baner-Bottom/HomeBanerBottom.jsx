@@ -23,57 +23,63 @@ const HomeBanerBottom = () => {
         <div className=""></div>
       </div>
       <div
-        className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-3"
+        className="grid grid-cols-2 mt-5 lg:grid-cols-4 gap-3"
         style={{ background: "rgb(241 245 249)" }}
       >
         <div
-          className="card p-4 card-side shadow-xl"
+          className="card items-center p-1 md:p-2 card-side shadow-xl"
           style={{ background: "rgb(241 245 249)" }}
         >
-          <figure className="border-1 border-slate-600">
-            <BsTruck className="w-14 h-14" />
+          <figure className="w-14 h-14 lg:w-1/2 lg:h-fit">
+            <BsTruck className="w-full h-full md:w-14 md:h-14" />
           </figure>
-          <div className="card-body">
+          <div className=" flex flex-col ps-2 gap-2 p-2">
             <h2 className="card-title">Free shipping</h2>
-            <p className="text-slate-700">Free Shipping for orders over $120</p>
+            <p className="text-sm md:text-lg text-slate-700">
+              Free Shipping for orders over $120
+            </p>
           </div>
         </div>
         <div
-          className="card p-4 card-side shadow-xl"
+          className="card items-center p-1 md:p-2 card-side shadow-xl"
           style={{ background: "rgb(241 245 249)" }}
         >
-          <figure>
-            <AiOutlineDollar className="w-14 h-14" />
+          <figure className="w-14 h-14 lg:w-1/2 lg:h-fit">
+            <AiOutlineDollar className="w-full h-full md:w-14 md:h-14" />
           </figure>
-          <div className="card-body">
+          <div className="flex flex-col ps-2 gap-2 p-2">
             <h2 className="card-title">Refund</h2>
-            <p className="text-slate-700">
+            <p className="text-sm md:text-lg text-slate-700">
               Refund Within 30 days for an exchange.
             </p>
           </div>
         </div>
         <div
-          className="card p-4 card-side shadow-xl"
+          className="card items-center p-1 md:p-2 card-side shadow-xl"
           style={{ background: "rgb(241 245 249)" }}
         >
-          <figure>
-            <RiMessage3Fill className="w-14 h-14" />
+          <figure className="w-14 h-14 lg:w-1/2 lg:h-fit">
+            <RiMessage3Fill className="wlg:w-14 lg:h-14 -full h-full " />
           </figure>
-          <div className="card-body">
+          <div className="flex flex-col ps-2 gap-2 p-2">
             <h2 className="card-title">Support</h2>
-            <p className="text-slate-700">24 hours a day, 7 days a week</p>
+            <p className="text-sm md:text-lg text-slate-700">
+              24 hours a day, 7 days a week
+            </p>
           </div>
         </div>
         <div
-          className="card p-4 card-side shadow-xl"
+          className="card items-center p-1 md:p-2 card-side shadow-xl"
           style={{ background: "rgb(241 245 249)" }}
         >
-          <figure>
-            <FaCcMastercard className="w-14 h-14" />
+          <figure className="w-14 h-14 lg:w-1/2 lg:h-fit">
+            <FaCcMastercard className="wlg:w-14 lg:h-14 -full h-full " />
           </figure>
-          <div className="card-body">
+          <div className="flex flex-col ps-2 gap-2 p-2">
             <h2 className="card-title">Payment</h2>
-            <p className="text-slate-700">Pay with Multiple Credit Cards</p>
+            <p className="text-sm md:text-lg text-slate-700">
+              Pay with Multiple Credit Cards
+            </p>
           </div>
         </div>
       </div>

@@ -124,10 +124,24 @@ body {
     .banner-img {
         width: 100% !important;
     }
+
+    .dealotd::before {
+        content: "";
+        width: 2px;
+        height: 120%;
+        top: -20px;
+        position: absolute;
+        background: #8ba691;
+        left: -1rem;
+    }
 }
 
 @media only screen and (min-width:690px) and (max-width:900px) {
     .banner-img {
         width: 100% !important;
+    }
+
+    .dealotd::before {
+        top: -20px;
     }
 }
